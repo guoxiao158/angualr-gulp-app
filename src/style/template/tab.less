@@ -1,0 +1,15 @@
+.tab {
+  background-color: @bodyBgColor;
+  font-size: 0;
+  margin-top: 40px;
+  li {
+    .fs(14);
+    width: 33.3333%;
+    .h(40);
+    .lh(40);
+    border-bottom: 2px solid @bodyBgColor;
+    &.active {
+      border-bottom: 2px solid @headBgColor;
+    }
+  }
+}

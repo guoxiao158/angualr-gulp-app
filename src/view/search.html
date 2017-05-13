@@ -1,0 +1,12 @@
+<div class="search-bar ta-c">
+  <button type="button" name="button" ng-click="name='';search()">取消</button>
+  <input type="text" name="" value="" placeholder="搜索职位/公司/城市" ng-model="name">
+  <button type="button" name="button" ng-click="search();">
+    <img src="image/search.png" alt="" class="d-ib va-m">
+    搜索
+  </button>
+</div>
+<div app-tab list="tabList" tab-click="tClick(id, name)"></div>
+<div app-position-list data="positionList" filter-obj="filterObj"></div>
+<div app-foot></div>
+<div app-sheet select="sClick(id, name)" list="sheet.list" visible="sheet.visible"></div>

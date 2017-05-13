@@ -1,0 +1,28 @@
+.position-list {
+  .item {
+    padding: 7px 3px;
+    border-bottom: 1px solid @bodyBgColor;
+    .logo {
+      .w(65);
+      .h(65);
+      .mr(13);
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+    .icon {
+      background-repeat: no-repeat;
+      .w(30);
+      .h(28);
+      top: 14px;
+      right: 12px;
+      background-size: 30px 28px;
+      &.star {
+        background-image: url(../image/star.png);
+      }
+      &.star-active {
+        background-image: url(../image/star-active.png);
+      }
+    }
+  }
+}
